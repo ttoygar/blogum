@@ -26,10 +26,14 @@ with open('../etc/secret_key.txt') as f:
     SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
+DEBUG = False
+try:
+    with open('../etc/DJANGO_DEBUG_TRUE') as f:
+        DEBUG=True
+except:
+    pass
 
-ALLOWED_HOSTS = ['toygar.pythonanywhere.com']
+ALLOWED_HOSTS = ['toygar.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
