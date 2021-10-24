@@ -1,9 +1,10 @@
 {% extends 'layout.html' %}
 
-{% block title %}Youkoso{% endblock %}
+{% block title %}Blogum{% endblock %}
 
 
 {% block body %}
+{% load static %}
 
 <!--CTA-->
 <div class="container py-5">
@@ -13,6 +14,7 @@
       <h5>Everyday headphones that make your favorite artists sound like their performing a never-ending encore.</h5>
     </div>
     <div class="col-sm-12 col-md-12 col-lg-6">
+      <img class="img-fluid rounded" src="{% static 'img/upupandaway.jpg' %}" alt="Cat-yang">
     </div>
   </div>
 </div>

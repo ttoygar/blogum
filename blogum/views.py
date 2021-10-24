@@ -12,3 +12,6 @@ def halk_ekmek(request):
 
 def projeler(request):
     return render(request, 'blogum/projeler.html')
+
+def contact(request):
+    return render(request, 'blogum/contact.html')
