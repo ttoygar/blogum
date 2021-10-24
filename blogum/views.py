@@ -8,3 +8,7 @@ def anasayfa(request):
 
 def halk_ekmek(request):
     return  render(request, 'blogum/halk_ekmek.html')
+
+
+def projeler(request):
+    return render(request, 'blogum/projeler.html')

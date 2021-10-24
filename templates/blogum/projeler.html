@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %}Projeler{% endblock %}
+
+
+{% block body %}
+<div class="container py-5">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-6 pb-4">
+      <h1 class="display-4 font-weight-bold">Projects list</h1>
+        <p><a href="{% url 'halkekmek' %}">İstanbul Halk Ekmek Büfelerinin ve Satış Noktalarının Harita Üzerine İşlenmesi</a> </p>
+        <p><a href="https://github.com/ttoygar/meclis_genel_kurul_tutanaklari">TBMM Genel Kurul Tutanaklarının BeautifulSoup4 ile indirilmesi</a></p>
+        <p><a href="https://github.com/ttoygar/geocalc">geocalc</a></p>
+        <p><a href="https://github.com/ttoygar/scrap_wpost">scrap</a></p>
+        <p><a href="https://github.com/ttoygar/django_bando">django_bando</a></p>
+        <p><a href="https://github.com/ttoygar/blogum">blogum</a> </p>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-6">
+    </div>
+  </div>
+</div>
+
+
+
+
+{% endblock %}
