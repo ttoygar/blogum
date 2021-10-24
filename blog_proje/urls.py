@@ -20,5 +20,6 @@ from blogum import views as blog_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', blog_views.anasayfa, name='anasayfa')
+    path('', blog_views.anasayfa, name='anasayfa'),
+    path('halk_ekmek/', blog_views.halk_ekmek, name='halkekmek'),
 ]
