@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %}Contact{% endblock %}
+
+
+{% block body %}
+{% load static %}
+
+<div class="container py-5">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-6 pb-4">
+      <h1 class="display-4 font-weight-bold">&#9742</h1>
+      <h5>Everyday headphones that make your favorite artists sound like their performing a never-ending encore.</h5>
+      <p><h5>&#9993 <a href="mailto:a@a.com">Send email</a></h5></p>
+
+<!--      <form method="post">-->
+<!--        {% csrf_token %}-->
+<!--        <label for="mail_user">Enter your email:</label>-->
+<!--        <p><input type="email" class="form-control" name="mail_user" placeholder="name@example.com"></p>-->
+<!--        <label for="mail_body">Enter message:</label>-->
+<!--        <textarea class="form-control" id="mail_body" rows="3"></textarea>-->
+<!--        <button type="submit" class="btn btn-primary">Send</button>-->
+
+<!--      </form>-->
+
+
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-6">
+      <img class="img-fluid rounded" src="{% static 'img/catyang.jpg' %}" alt="Cat-yang">
+    </div>
+  </div>
+</div>
+{% endblock %}
